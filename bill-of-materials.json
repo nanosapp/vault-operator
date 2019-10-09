@@ -27,7 +27,7 @@
 		]
 	},
 	{
-		"project": "github.com/coreos/vault-operator",
+		"project": "github.com/nanosapp/vault-operator",
 		"licenses": [
 			{
 				"type": "Apache License 2.0",

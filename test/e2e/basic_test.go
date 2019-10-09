@@ -17,9 +17,9 @@ package e2e
 import (
 	"testing"
 
-	api "github.com/coreos/vault-operator/pkg/apis/vault/v1alpha1"
-	"github.com/coreos/vault-operator/test/e2e/e2eutil"
-	"github.com/coreos/vault-operator/test/e2e/framework"
+	api "github.com/nanosapp/vault-operator/pkg/apis/vault/v1alpha1"
+	"github.com/nanosapp/vault-operator/test/e2e/e2eutil"
+	"github.com/nanosapp/vault-operator/test/e2e/framework"
 )
 
 func TestCreateHAVault(t *testing.T) {

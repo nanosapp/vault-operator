@@ -17,6 +17,7 @@ package vaultutil
 import (
 	"bytes"
 	"fmt"
+	"github.com/sirupsen/logrus"
 	"path/filepath"
 
 	vaultapi "github.com/hashicorp/vault/api"
@@ -62,6 +63,8 @@ telemetry {
 	statsd_address = "localhost:9125"
 }
 `)
+
+	logrus.Info("NewConfigWithDefaultParams: ", buf)
 
 	listenerSection := fmt.Sprintf(listenerFmt,
 		filepath.Join(VaultTLSAssetDir, ServerTLSCertName),

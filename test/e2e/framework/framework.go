@@ -19,10 +19,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/coreos/vault-operator/pkg/client"
-	"github.com/coreos/vault-operator/pkg/generated/clientset/versioned"
-	"github.com/coreos/vault-operator/pkg/util/k8sutil"
-	"github.com/coreos/vault-operator/test/e2e/e2eutil"
+	"github.com/nanosapp/vault-operator/pkg/client"
+	"github.com/nanosapp/vault-operator/pkg/generated/clientset/versioned"
+	"github.com/nanosapp/vault-operator/pkg/util/k8sutil"
+	"github.com/nanosapp/vault-operator/test/e2e/e2eutil"
 
 	etcdclient "github.com/coreos/etcd-operator/pkg/client"
 	etcdversioned "github.com/coreos/etcd-operator/pkg/generated/clientset/versioned"

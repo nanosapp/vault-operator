@@ -18,7 +18,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/coreos/vault-operator/test/e2e/upgradetest/framework"
+	"github.com/nanosapp/vault-operator/test/e2e/upgradetest/framework"
 
 	"github.com/sirupsen/logrus"
 )

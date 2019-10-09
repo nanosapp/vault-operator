@@ -15,8 +15,8 @@
 package client
 
 import (
-	"github.com/coreos/vault-operator/pkg/generated/clientset/versioned"
-	"github.com/coreos/vault-operator/pkg/util/k8sutil"
+	"github.com/nanosapp/vault-operator/pkg/generated/clientset/versioned"
+	"github.com/nanosapp/vault-operator/pkg/util/k8sutil"
 
 	"k8s.io/client-go/rest"
 )

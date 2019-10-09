@@ -18,9 +18,9 @@ import (
 	"context"
 	"os"
 
-	"github.com/coreos/vault-operator/pkg/client"
-	"github.com/coreos/vault-operator/pkg/generated/clientset/versioned"
-	"github.com/coreos/vault-operator/pkg/util/k8sutil"
+	"github.com/nanosapp/vault-operator/pkg/client"
+	"github.com/nanosapp/vault-operator/pkg/generated/clientset/versioned"
+	"github.com/nanosapp/vault-operator/pkg/util/k8sutil"
 
 	etcdCRClientPkg "github.com/coreos/etcd-operator/pkg/client"
 	etcdCRClient "github.com/coreos/etcd-operator/pkg/generated/clientset/versioned"
