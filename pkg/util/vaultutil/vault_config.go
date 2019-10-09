@@ -57,9 +57,7 @@ storage "etcd" {
 // - tcp listener
 func NewConfigWithDefaultParams(data string) string {
 	buf := bytes.NewBufferString(data)
-	buf.WriteString(`disable_mlock = true
-ui = true
-
+	buf.WriteString(`ui = true
 telemetry {
 	statsd_address = "localhost:9125"
 }

@@ -164,6 +164,13 @@ func vaultContainer(v *api.VaultService) v1.Container {
 			Name:      vaultConfigVolName,
 			MountPath: filepath.Dir(VaultConfigPath),
 		}},
+		SecurityContext: &v1.SecurityContext{
+			Capabilities: &v1.Capabilities{
+				// Vault requires mlock syscall to work.
+				// Without this it would fail "Error initializing core: Failed to lock memory: cannot allocate memory"
+				Add: []v1.Capability{"IPC_LOCK"},
+			},
+		},
 		Ports: []v1.ContainerPort{{
 			Name:          vaultClientPortName,
 			ContainerPort: int32(VaultClientPort),
